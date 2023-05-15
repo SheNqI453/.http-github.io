@@ -6,15 +6,15 @@
   
   <title>OpenFake | SheNqI453</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="&lt;!-- &lt;link rel&#x3D;&quot;shortcut icon&quot; href&#x3D;&quot;&quot; type&#x3D;&quot;image&#x2F;x-icon&quot; &#x2F;&gt; --&gt;  &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;  &lt;title&gt;OpenAI&lt;&#x2F;title&gt;  &amp;l">
+  <meta name="description" content="OpenAI            body {          color: #333;          background-color: #eee;        }      @media (prefers-color-scheme: dark) {        body {          background: black;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OpenFake">
 <meta property="og:url" content="https://shenqi453.github.io/2023/05/15/OpenFake/index.html">
 <meta property="og:site_name" content="SheNqI453">
-<meta property="og:description" content="&lt;!-- &lt;link rel&#x3D;&quot;shortcut icon&quot; href&#x3D;&quot;&quot; type&#x3D;&quot;image&#x2F;x-icon&quot; &#x2F;&gt; --&gt;  &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;  &lt;title&gt;OpenAI&lt;&#x2F;title&gt;  &amp;l">
+<meta property="og:description" content="OpenAI            body {          color: #333;          background-color: #eee;        }      @media (prefers-color-scheme: dark) {        body {          background: black;">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2023-05-15T02:21:52.000Z">
-<meta property="article:modified_time" content="2023-05-15T02:25:36.971Z">
+<meta property="article:modified_time" content="2023-05-15T02:31:51.684Z">
 <meta property="article:author" content="SheNqI453">
 <meta name="twitter:card" content="summary">
   
@@ -111,87 +111,57 @@
 
 <head>
 
-<pre><code>&lt;!-- &lt;link rel=&quot;shortcut icon&quot; href=&quot;&quot; type=&quot;image/x-icon&quot; /&gt; --&gt;
+  <!-- <link rel="shortcut icon" href="" type="image/x-icon" /> -->
 
-&lt;meta charset=&quot;UTF-8&quot;&gt;
+  <meta charset="UTF-8">
 
-&lt;title&gt;OpenAI&lt;/title&gt;
+  <title>OpenAI</title>
 
-&lt;style&gt;
+  <style>
 
-  body &#123;
+      body {
 
-    color: #333;
+        color: #333;
 
-    background-color: #eee;
+        background-color: #eee;
 
-  &#125;
+      }
 
-@media (prefers-color-scheme: dark) &#123;
+    @media (prefers-color-scheme: dark) {
 
-  body &#123;
+      body {
 
-    background: black;
+        background: black;
 
-    color: white;
+        color: white;
 
-  &#125;
+      }
 
-&#125;
+    }
 
-&lt;/style&gt;
-</code></pre>
+    </style>
+
 </head>
 
 
 
 <body>
-
   <div align="center">
-
-  <h2>Fake ChatGPT</h2>
-
-  <div>注意：接口返回可能比较慢（服务在国外，并且OpenAI返回速度也比较慢），提交后需要等待处理完成，请勿重复提交！！！</div>
-
-  <div>~接口返回有长度限制~</div>
-
-  <hr />
-
-<pre><code>  &#123;% if message %&#125; &#123;&#123; message &#125;&#125; &#123;% endif %&#125;
-
-  &lt;form method=&quot;post&quot; onsubmit=&quot;submit.disabled=true&quot;&gt;
-
-        &lt;textarea style=&quot;width:35%;&quot; name=&quot;question&quot; placeholder=&quot;点击这里输入问题&quot; rows=&quot;11&quot; id=&quot;form&quot;&gt;&lt;/textarea&gt;
-
-        &lt;br&gt;
-
-        &lt;input type=&quot;submit&quot; style=&quot;width:150px;height:50px;background-color:green;font-size:30px&quot; value=&quot;提交&quot; id=&quot;submit&quot; /&gt;
-
-    &lt;/form&gt;
-
-    &lt;div id=&quot;loading&quot; style=&quot;display:none; color:red&quot;&gt;&lt;b&gt;后端正在处理，请稍等...&lt;/b&gt;&lt;/div&gt;
-
-    &#123;% if question %&#125;
-
-      <div style="text-align: left"><b>人类:</b>
-
-        <pre id="question">&#123;&#123; question &#125;&#125;</pre>
-
-      </div>
-
-      <hr />
-
-      <div style="text-align: left"><b>人工智障:</b>
-
-          <pre style="text-align:left; white-space: pre-wrap;" id="res">&#123;&#123; res &#125;&#125;</pre>
-
-      </div>
-
-      &#123;% endif %&#125;
-</code></pre>
+    <h2>Fake ChatGPT</h2>
+    <div>注意：接口返回可能比较慢（服务在国外，并且OpenAI返回速度也比较慢），提交后需要等待处理完成，请勿重复提交！！！</div>
+    <div>~接口返回有长度限制~</div>
+    <hr/>
+    
+    <form method="post" onsubmit="submit.disabled=true">
+      <textarea style="width:35%;" name="question" placeholder="点击这里输入问题" rows="11" id="form"></textarea>
+      <br>
+      <input type="submit" style="width:150px;height:50px;background-color:green;font-size:30px" value="提交" id="submit" />
+    </form>
+    <div id="loading" style="display:none; color:red"><b>后端正在处理，请稍等...</b></div>
+    
   </div>
-
 </body>
+
 
 <script>
 

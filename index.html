@@ -145,19 +145,19 @@
 
 <body>
 
-<pre><code>&lt;div align=&quot;center&quot;&gt;
+  <div align="center">
 
-    &lt;h2&gt;Fake ChatGPT&lt;/h2&gt;
+  <h2>Fake ChatGPT</h2>
 
-    &lt;div&gt;注意：接口返回可能比较慢（服务在国外，并且OpenAI返回速度也比较慢），提交后需要等待处理完成，请勿重复提交！！！&lt;/div&gt;
+  <div>注意：接口返回可能比较慢（服务在国外，并且OpenAI返回速度也比较慢），提交后需要等待处理完成，请勿重复提交！！！</div>
 
-    &lt;div&gt;~接口返回有长度限制~&lt;/div&gt;
+  <div>~接口返回有长度限制~</div>
 
-    &lt;hr /&gt;
+  <hr />
 
-    &#123;% if message %&#125; &#123;&#123; message &#125;&#125; &#123;% endif %&#125;
+<pre><code>  &#123;% if message %&#125; &#123;&#123; message &#125;&#125; &#123;% endif %&#125;
 
-    &lt;form method=&quot;post&quot; onsubmit=&quot;submit.disabled=true&quot;&gt;
+  &lt;form method=&quot;post&quot; onsubmit=&quot;submit.disabled=true&quot;&gt;
 
         &lt;textarea style=&quot;width:35%;&quot; name=&quot;question&quot; placeholder=&quot;点击这里输入问题&quot; rows=&quot;11&quot; id=&quot;form&quot;&gt;&lt;/textarea&gt;
 
@@ -171,24 +171,24 @@
 
     &#123;% if question %&#125;
 
-        <div style="text-align: left"><b>人类:</b>
+      <div style="text-align: left"><b>人类:</b>
 
-            <pre id="question">&#123;&#123; question &#125;&#125;</pre>
+        <pre id="question">&#123;&#123; question &#125;&#125;</pre>
 
-        </div>
+      </div>
 
-        <hr />
+      <hr />
 
-        <div style="text-align: left"><b>人工智障:</b>
+      <div style="text-align: left"><b>人工智障:</b>
 
-            <pre style="text-align:left; white-space: pre-wrap;" id="res">&#123;&#123; res &#125;&#125;</pre>
+          <pre style="text-align:left; white-space: pre-wrap;" id="res">&#123;&#123; res &#125;&#125;</pre>
 
-        </div>
+      </div>
 
-        &#123;% endif %&#125;
-
-&lt;/div&gt;
+      &#123;% endif %&#125;
 </code></pre>
+  </div>
+
 </body>
 
 <script>
